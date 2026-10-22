@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Formula.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout>
+
+            <Label Text="Rejestruj konto" VerticalTextAlignment="Center" FontSize="30" Padding="0,0,0,0" BackgroundColor="#008080" TextColor="#FFFFFF"></Label>
+            <Label Text="Podaj e-mail" TextColor="#505050"></Label>
+            <Entry x:Name="MainEntry" HeightRequest="1" IsVisible="Visible"></Entry>
+            <Label Text="Podaj haslo" TextColor="#505050"></Label>
+            <Entry x:Name="PasswordEntry" HeightRequest="1" IsVisible="Visible" IsPassword="True"></Entry>
+            <Label Text="Powtorz haslo" TextColor="#505050"></Label>
+            <Entry x:Name="SecondPasswordEntry" HeightRequest="1" IsVisible="Visible" IsPassword="True"></Entry>
+
+            <Button x:Name="ConfirmButton" Clicked="ConfirmButton_Clicked"  Text="ZATWIERDZ" WidthRequest="150" HeightRequest="20" CornerRadius="1" MaximumHeightRequest="0" Padding="0" Margin="0,20,0,0" TextColor="#000000" BackgroundColor="#828282"></Button>
+
+            <Label x:Name="ResultLabel" Text="Autor: Daniil Bilenko" HorizontalTextAlignment="Center" Padding="0,20,0,0"></Label>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
